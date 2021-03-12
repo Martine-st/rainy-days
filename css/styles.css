@@ -1,6 +1,14 @@
 /* Global */
 
+.logo {
+  max-height: 200px;
+}
+
 /* Home Page */
+
 body {
-  background-color: aquamarine;
+  background-image: url(../images/bg-mob.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
