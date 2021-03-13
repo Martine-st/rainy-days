@@ -1,7 +1,157 @@
-/* Global */
+@font-face {
+  font-family: "Roboto Slab";
+  src: url("../fonts/RobotoSlab.ttf") format("truetype");
+}
 
-.logo {
-  max-height: 200px;
+@font-face {
+  font-family: "Roboto Slab Bold";
+  src: url("../fonts/RobotoSlabBold.ttf") format("truetype");
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  min-height: 100vh;
+  margin: 0px;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
+header,
+footer {
+  background-color: #fff;
+  color: #000;
+}
+
+.logo img {
+  width: 90px;
+  height: auto;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  box-shadow: 10px 0px 5px #707070;
+  position: sticky;
+  z-index: 1000;
+  padding: 10px 0px;
+}
+
+nav {
+  font-family: "Roboto Slab";
+  margin-left: 25px;
+  display: none;
+  position: fixed;
+  top: 72px;
+  background: #fff;
+  border: #707070 5px;
+  z-index: 1000;
+  right: 0px;
+}
+
+nav ul {
+  padding: 0px;
+}
+
+nav li {
+  display: block;
+  padding: 20px 30px;
+}
+
+#hamburger-menu {
+  display: none;
+}
+
+#hamburger-menu:checked ~ nav {
+  display: block;
+}
+
+#add-to-cart,
+.cart {
+  display: none;
+}
+
+.cart {
+  font-family: "Roboto Slab";
+  display: none;
+  position: fixed;
+  top: 72px;
+  background: #fff;
+  z-index: 1000;
+  right: 0px;
+  max-width: 170px;
+  padding: 5px;
+}
+
+.cart h3 {
+  text-align: center;
+}
+
+#add-to-cart:checked ~ .cart {
+  display: block;
+}
+
+h1,
+h2 {
+  font-family: "Roboto Slab Bold", serif;
+  text-align: center;
+  padding: 0px 5px;
+}
+
+h1 {
+  color: #027373;
+  font-size: 2em;
+  padding: 5px;
+  text-shadow: 1px 1px 1px #0b3a40;
+}
+
+h2 {
+  color: #0b3a40;
+  font-size: 1.5em;
+  text-shadow: 1px 1px 2px #fff;
+}
+
+footer {
+  padding: 10px;
+  background: rgb(250, 250, 250, 0.7);
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+footer img {
+  width: 40px;
+  height: auto;
+}
+
+/* Links */
+a {
+  text-decoration: none;
+  color: #db8422;
+}
+
+a:hover,
+label:hover {
+  cursor: pointer;
+}
+
+nav a:hover {
+  text-decoration: underline #db8422 2px;
+}
+
+nav a:active {
+  text-decoration: underline;
+}
+
+.cta {
+  background-color: #db8422;
+  border-radius: 30px;
+  color: #fff;
+  font-size: 1em;
+  text-align: center;
+  padding: 10px 30px;
+  text-transform: uppercase;
+  display: inline-block;
 }
 
 /* Home Page */
