@@ -17,17 +17,10 @@ body {
   grid-template-rows: auto 1fr auto;
 }
 
-/*  grid-template-areas:
-    "header"
-    "welcome"
-    "footer";
-  grid-template-rows: 80px 1fr 50px;
-*/
-
 header,
 footer {
   background-color: #fff;
-  padding: 10px;
+  min-height: 50px;
 }
 
 header {
@@ -107,7 +100,7 @@ nav a:active {
   padding: 10px 20px;
 }
 
-/* Home Page 
+/* Home Page */
 
 .welcome {
   text-align: center;
@@ -138,7 +131,7 @@ h2 span {
   margin-top: 100px;
 }
 
-*/
+/* Media Queries*/
 
 @media (min-width: 600px) {
   header {
