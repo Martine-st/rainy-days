@@ -124,7 +124,7 @@ nav a:active {
   color: rgb(0, 0, 0);
   border: none;
   border-radius: 30px;
-  font-size: 1em;
+  font-size: 0.8em;
   text-transform: uppercase;
   padding: 10px 20px;
   background-color: #ff8800;
@@ -164,7 +164,7 @@ h2 span {
 }
 
 .cta-welcome {
-  padding-top: 208px;
+  padding-top: 200px;
 }
 
 /* Contact page */
