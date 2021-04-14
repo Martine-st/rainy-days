@@ -30,12 +30,11 @@
             <section class="content-box">
                 <p>Please fill out this form, we will get back to you as soon as we can:</p>
                 <form action="" method="GET">
-                    <div class="form-flex">
                         <section>
                             <input type="text" name="fullname" id="fullname" placeholder="Full name">
                             <input type="email" name="email" id="email" placeholder="Email">
                             <select id="topic" name="topic">
-                                <option value="topic" disabled>Choose a topic...</option>
+                                <option name="topic" value="topic" disabled selected>Choose a topic...</option>
                                 <option name="billing" value="Billing">Billing</option>
                                 <option name="return-and-refund" value="Return & Refund">Return & Refund</option>
                                 <option name="shipping-and-delivery" value="Shipping & Delivery">Shipping & Delivery</option>
@@ -45,7 +44,6 @@
                         <section>
                             <textarea id="textarea" name="message" placeholder="Type your message here"></textarea>
                         </section>
-                    </div>
                     <div class="submit">
                         <input type="submit" name="submit" value="SEND" class="cta">
                     </div>

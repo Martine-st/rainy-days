@@ -27,18 +27,30 @@
         </header>
         <main>
             <h2>The Classic</h2>
-            <section class="content-box">
+            <section class="content-box product_content">
                 <div class="product">
-                    <img src="../images/product_img.jpeg">
+                    <img src="../images/product_img.jpg">
                 </div>
-                <div class="product-color">
-
-                </div>
-                <div class="product-size">
-
-                </div>
-                <p>COST $79.00</p>
-                <a class="cta" href="checkout.html">Add to cart</a>
+                <select id="product-color" name="product-color">
+                    <option value="choose-color" disabled selected>Choose color</option>
+                    <option name="yellow" value="yellow">Yellow</option>
+                    <option name="black" value="black">Black</option>
+                    <option name="red" value="red">Red</option>
+                    <option name="blue" value="blue">Blue</option>
+                    <option name="green" value="green">Green</option>
+                </select>
+                <select id="product-size" name="product-size">
+                    <option value="choose-size" disabled selected>Choose size</option>
+                    <option name="x-small" value="x-small">XS</option>
+                    <option name="small" value="small">S</option>
+                    <option name="medium" value="medium">M</option>
+                    <option name="large" value="large">L</option>
+                    <option name="x-large" value="x-large">XL</option>
+                </select>
+                <p>$79.00</p>
+                <div>
+                    <a class="cta" href="checkout.html">Add to cart</a>
+                </div> 
             </section>
         </main>
         <footer class="footer">
