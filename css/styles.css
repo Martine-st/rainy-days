@@ -8,6 +8,10 @@
   src: url("../fonts/RobotoSlabBold.ttf") format("truetype");
 }
 
+:root {
+  --text-heading: "Roboto Slab", Georgia, "Times New Roman", Times, serif;
+}
+
 body {
   background-image: url("../images/mobile-bg.jpg");
   background-repeat: no-repeat;
@@ -24,7 +28,7 @@ body {
 h2,
 h3 {
   color: #0b3a40;
-  font-family: "Roboto Slab";
+  font-family: var(--text-heading);
   text-align: center;
 }
 
@@ -58,7 +62,7 @@ header {
 }
 
 nav {
-  font-family: "Roboto Slab", Georgia, "Times New Roman", Times, serif;
+  font-family: var(--text-heading);
   font-size: 0.8em;
   display: none;
   background-color: #fff;
@@ -102,6 +106,19 @@ nav li {
   max-width: 500px;
 }
 
+.submit,
+.cta-continue,
+.success,
+.cta-more {
+  text-align: center;
+}
+
+.form-wrap {
+  display: flex;
+  flex-direction: column;
+  max-width: 200px;
+}
+
 footer {
   padding: 10px 10px 0px 10px;
   background: rgba(250, 250, 250, 0.7);
@@ -123,12 +140,9 @@ a {
 
 nav a:hover,
 .selected,
-.success {
-  text-decoration: underline #ff8800 2px;
-}
-
+.success,
 nav a:active {
-  text-decoration: underline;
+  text-decoration: underline #ff8800 2px;
 }
 
 .cta {
@@ -159,7 +173,7 @@ nav a:active {
 }
 
 .welcome-content h1 {
-  font-family: "Roboto Slab Bold", Georgia, "Times New Roman", Times, serif;
+  font-family: var(--text-heading);
   color: #027373;
   font-size: 1.8em;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8);
@@ -168,7 +182,7 @@ nav a:active {
 }
 
 .welcome-content h2 {
-  font-family: "Roboto Slab", Georgia, "Times New Roman", Times, serif;
+  font-family: var(--text-heading);
   color: #0b3a40;
   background-color: rgba(255, 255, 255, 0.7);
   font-size: 1.3em;
@@ -187,7 +201,7 @@ h2 span {
 
 .contact-p {
   margin-bottom: 20px;
-  font-family: "Roboto Slab";
+  font-family: var(--text-heading);
   font-size: 0.9em;
   text-align: center;
 }
@@ -206,17 +220,7 @@ textarea {
   width: 65%;
 }
 
-.submit {
-  text-align: center;
-}
-
-.form-wrap {
-  display: flex;
-  flex-direction: column;
-  max-width: 200px;
-}
-
-/* Product pages */
+/* Shop, New In & Product (eg. The Classic), pages */
 
 .product img {
   width: 120px;
@@ -226,7 +230,7 @@ textarea {
 .product {
   background: #fff;
   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.233);
-  font-family: "Roboto Slab";
+  font-family: var(--text-heading);
   text-align: center;
   margin-bottom: 20px;
 }
@@ -245,12 +249,18 @@ textarea {
 }
 
 .product_content p {
-  font-family: "Roboto Slab";
+  font-family: var(--text-heading);
   font-size: 1em;
   padding-bottom: 10px;
 }
 
-/*Checkout page*/
+.product-p {
+  line-height: normal;
+  font-family: var(--text-heading);
+  font-size: 1.1em;
+}
+
+/* Checkout page */
 
 .checkout_content {
   display: grid;
@@ -260,26 +270,17 @@ textarea {
   margin-bottom: 15px;
 }
 
-.cta-continue {
-  text-align: center;
-}
-
 /* Success page */
 
 .success-box {
   margin-top: 70px;
 }
 
-.success,
-.cta-more {
-  text-align: center;
-}
-
 .cta-more {
   margin-top: 40px;
 }
 
-/* Media Queries*/
+/* Media Queries */
 
 @media (min-width: 623px) {
   header {
@@ -310,7 +311,7 @@ textarea {
     margin-top: 400px;
   }
 
-  .cta {
+  .cta-explore {
     font-size: 0.9em;
   }
 
@@ -348,7 +349,7 @@ textarea {
   }
 
   nav {
-    font-family: "Roboto Slab Bold";
+    font-family: var(--text-heading);
     font-size: 1em;
   }
 
@@ -360,7 +361,7 @@ textarea {
     margin-top: 100px;
   }
 
-  .cta {
+  .cta-explore {
     font-size: 1em;
   }
 
@@ -379,7 +380,6 @@ textarea {
 
   footer {
     justify-content: right;
-    gap: 0px;
   }
 
   footer img {
