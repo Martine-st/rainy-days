@@ -21,13 +21,19 @@ body {
   grid-template-rows: auto 1fr auto;
 }
 
-h2 {
+h2,
+h3 {
   color: #0b3a40;
+  font-family: "Roboto Slab";
   text-align: center;
-  padding: 10px 0px 0px 0px;
 }
 
-p {
+h3 {
+  text-align: left;
+}
+
+p,
+label {
   font-size: 0.8em;
   line-height: 1.5em;
 }
@@ -79,16 +85,20 @@ nav li {
   display: block;
 }
 
+.content-grid {
+  display: grid;
+  grid-template-columns: auto;
+  justify-content: center;
+  margin-top: -25px;
+}
+
 .content-box {
   background: rgba(250, 250, 250);
   border: solid 1px rgba(70, 70, 70);
   padding: 20px 30px 35px 30px;
-  margin: 30px;
+  margin: 15px 30px;
   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.233);
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
+  max-width: 500px;
 }
 
 footer {
@@ -133,6 +143,11 @@ nav a:active {
   padding: 10px 20px;
   background-color: #ff8800;
   box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.7);
+}
+
+.cta2 {
+  background-color: #0b3a40;
+  color: #fff;
 }
 
 .contact-link {
@@ -192,6 +207,15 @@ textarea {
   margin-top: 10px;
 }
 
+.form-wrap {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-weight: bold;
+}
+
 /* Product pages */
 
 .product img {
@@ -204,7 +228,6 @@ textarea {
   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.233);
   font-family: "Roboto Slab";
   text-align: center;
-  min-width: 180px;
   margin-bottom: 20px;
 }
 
@@ -216,7 +239,9 @@ textarea {
 }
 
 .product_content {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .product_content p {
@@ -225,9 +250,23 @@ textarea {
   padding-bottom: 10px;
 }
 
+/*Checkout page*/
+
+.checkout_content {
+  display: grid;
+  grid-template-columns: auto auto;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 15px;
+}
+
+.cta-continue {
+  text-align: center;
+}
+
 /* Media Queries*/
 
-@media (min-width: 600px) {
+@media (min-width: 623px) {
   header {
     padding: 10px 0px;
   }
@@ -267,9 +306,13 @@ textarea {
   .welcome-content h2 {
     font-size: 1.5em;
   }
+
+  .product-list {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
 
-@media (min-width: 800px) {
+@media (min-width: 821px) {
   body {
     background-image: url("../images/desktop-bg.jpg");
   }
@@ -307,6 +350,10 @@ textarea {
   .welcome-content h2 {
     font-size: 2em;
     padding: 15px;
+  }
+
+  .product-list {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 
   footer {
