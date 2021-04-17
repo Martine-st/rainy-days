@@ -92,7 +92,8 @@ nav li {
   margin-top: -25px;
 }
 
-.content-box {
+.content-box,
+.success-box {
   background: rgba(250, 250, 250);
   border: solid 1px rgba(70, 70, 70);
   padding: 20px 30px 35px 30px;
@@ -120,13 +121,9 @@ a {
   color: #0b3a40;
 }
 
-a:hover,
-label:hover {
-  cursor: pointer;
-}
-
 nav a:hover,
-.selected {
+.selected,
+.success {
   text-decoration: underline #ff8800 2px;
 }
 
@@ -188,6 +185,11 @@ h2 span {
 
 /* Contact page */
 
+.contact-p {
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
 input,
 select,
 textarea {
@@ -204,16 +206,11 @@ textarea {
 
 .submit {
   text-align: center;
-  margin-top: 10px;
 }
 
 .form-wrap {
   display: flex;
   flex-direction: column;
-}
-
-label {
-  font-weight: bold;
 }
 
 /* Product pages */
@@ -262,6 +259,21 @@ label {
 
 .cta-continue {
   text-align: center;
+}
+
+/* Success page */
+
+.success-box {
+  margin-top: 60px;
+}
+
+.success,
+.cta-more {
+  text-align: center;
+}
+
+.cta-more {
+  margin-top: 40px;
 }
 
 /* Media Queries*/

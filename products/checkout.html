@@ -44,22 +44,34 @@
                     </div>
                 </section>
                 <section class="content-box">
-                    <form action="" method="GET">
+                    <form action="success.html" method="GET">
                         <h3>Billing info</h3>
                         <section>
-                            <input type="text" name="fullname" id="fullname" placeholder="Full name">
-                            <input type="email" name="email" id="email" placeholder="Email">
-                            <input type="tel" name="tel" id="tel" placeholder="Phone number">
-                            <input type="text" name="adress" id="adress" placeholder="Adress">
-                            <input type="text" name="postalcode" id="postalcode" placeholder="Postal code">
-                            <input type="text" name="city" id="city" placeholder="City">
+                            <label for="fullname">Full Name*</label>
+                            <input type="text" name="fullname" id="fullname" required>
+                            <label for="email">Email*</label>
+                            <input type="email" name="email" id="email" required>
+                            <label for="tel">Phone Number</label>
+                            <input type="tel" name="tel" id="tel">
+                            <label for="address">Address*</label>
+                            <input type="text" name="address" id="address" required>
+                            <label for="postalcode">ZIP / Postal Code*</label>
+                            <input type="text" name="postalcode" id="postalcode" required>
+                            <label for="city">City*</label>
+                            <input type="text" name="city" id="city" required>
+                            <label for="country">Country*</label>
+                            <input type="text" name="country" id="country" required>
                         </section>
                         <h3>Payment info</h3>
                             <section>
-                                <input type="text" name="cardnr" id="cardnr" placeholder="Card number">
-                                <input type="text" name="cardname" id="cardname" placeholder="Cardholder name">
-                                <input type="text" name="expdate" id="expdate" placeholder="MM/YY">
-                                <input type="text" name="CVC" id="CVC" placeholder="CVC">
+                                <label for="cardnr">Card Number*</label>
+                                <input type="text" name="cardnr" id="cardnr" required>
+                                <label for="cardholder">Cardholder Name*</label>
+                                <input type="text" name="cardname" id="cardname" required>
+                                <label for="expdate">Expiration Date*</label>
+                                <input type="text" name="expdate" id="expdate" placeholder="MM/YY" required>
+                                <label for="CVC">CVC*</label>
+                                <input type="text" name="CVC" id="CVC" placeholder="CVC" required>
                         <div class="submit">
                             <input type="submit" name="submit" value="BUY NOW" class="cta">
                         </div>
